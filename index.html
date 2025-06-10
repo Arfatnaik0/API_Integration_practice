@@ -9,57 +9,89 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    </div>
     <div class="container">
         <div class="searchbar">
-        <input class="search-input" type="text" placeholder="Enter City Name">
-        <button class="search-button">
-            <img src="assets/search.png" alt="search">
-        </button>
-    </div>
-    <div class="location-date">
-        <div class="location">
-            <img src="assets/location.png" alt="location">
-            <p class="location-text">Mumbai</p>
+            <input class="search-input" type="text" placeholder="Enter City Name">
+            <button class="search-button">
+                <img src="assets/search.png" alt="search">
+            </button>
         </div>
-        <div class="date">
-            <p class="date-text">TUE, 10 JUN</p>
+        <div class="weather-container" style="display: none;">
+            <div class="location-date">
+                <div class="location">
+                    <img src="assets/location.png" alt="location">
+                    <p class="location-text">Mumbai</p>
+                </div>
+                <div class="date">
+                    <p class="date-text">TUE, 10 JUN</p>
+                </div>
+            </div>
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img src="assets/weather/clouds.svg" class="weather-icon-img">
+                </div>
+                <div class="weather-temp">
+                    <p class="main-temp">24°C</p>
+                    <p class="main-weather-desc">Sunny</p>
+                </div>
+            </div>
+            <div class="weather-details-container">
+                <div class="weather-details">
+                    <div class="weather-air">
+                        <span class="material-symbols-outlined">air</span>
+                        <div class="weather-detail">
+                            <h5 class="regular-txt">Wind Speed</h5>
+                            <h3 class="air-value-txt">10 m/s</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="weather-hum">
+                        <span class="material-symbols-outlined">humidity_low</span>
+                        <div class="weather-detail">
+                            <h5 class="regular-txt">Humidity</h5>
+                            <h3 class="humidity-value-txt">10%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-items-container" >
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date regular-txt">10th June</h5>
+                    <img src="assets/weather/thunderstorm.svg" alt="forecast-item-img" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">24°C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date regular-txt">10th June</h5>
+                    <img src="assets/weather/thunderstorm.svg" alt="forecast-item-img" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">24°C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date regular-txt">10th June</h5>
+                    <img src="assets/weather/thunderstorm.svg" alt="forecast-item-img" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">24°C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date regular-txt">10th June</h5>
+                    <img src="assets/weather/thunderstorm.svg" alt="forecast-item-img" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">24°C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date regular-txt">10th June</h5>
+                    <img src="assets/weather/thunderstorm.svg" alt="forecast-item-img" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">24°C</h5>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="weather-info">
-        <div class="weather-icon">
-            <img src="assets/weather/clouds.svg" alt="weather-icon">
+        <div class="search-city">
+            <h1 class="message-title">Search City</h1>
+            <img class="message-img" src="assets/message/search-city.png" alt="search-city">
+            <h3 class="message-txt">Enter the name of a city to get the weather</h3>
         </div>
-        <div class="weather-temp">
-            <p class="main-temp">24°C</p>
-            <p class="main-weather-desc">Sunny</p>
+        <div class="error-message" style="display: none;">
+            <img class="message-img" src="assets/message/not-found.png" alt="search-city">
+            <h3 class="message-txt">City not found</h3>
         </div>
-    </div>
-    <div class="weather-details-container">
-    <div class="weather-details">
-        <div class="weather-air">
-        <span class="material-symbols-outlined">
-            air
-        </span>
-        <div class="weather-detail">
-            <h5 class="regular-txt">Wind Speed</h5>
-            <h3 class="air-value-txt">10 m/s</h3>
-        </div>
-      </div>
-    </div>
-    <div class="weather-details">
-      <div class="weather-hum">
-        <span class="material-symbols-outlined">
-            humidity_low
-            </span>
-        <div class="weather-detail">
-            <h5 class="regular-txt">Humidity</h5>
-            <h3 class="humidity-value-txt">10%</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
     </div>
 </body>
 </html>

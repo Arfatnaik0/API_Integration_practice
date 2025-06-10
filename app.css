@@ -110,6 +110,15 @@ body{
     color: #ffffffe4;
 }
 
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 .weather-info{
   height: 25%;
   display: flex;
@@ -189,9 +198,11 @@ h3{
 .weather-details{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 30%;
-    margin-left: 10px;
+    width: 40%;
+    margin-left: 20px;
 }
 
 .weather-air{
@@ -207,4 +218,70 @@ h3{
     height: 100%;
     width: 100%;
     margin-left: 10px;
+}
+
+.weather-details span{
+    font-size: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.weather-items-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.forecast-items{
+    min-width: 75px;
+    background: rgb(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: 0.25s background, transform;
+}
+
+.forecast-items:hover{
+    background: rgb(255,255,255,0.15);
+    transform: scale(1.05);
+    transition: 0.5s transform;
+}
+
+.forecast-item-img{
+    width: 40px;
+    height: 40px;
+}
+
+.search-city{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.message-title{
+    font-size: 2.5rem;
+    color: #ffffffe4;
+}
+
+.message-img{
+    height: 250px;
+    width: 250px;
+}
+
+.message-txt{
+    font-size: 1.5rem;
+    color: #ffffffe4;
+    padding-top: 20px;
+}
+
+.error-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
 }
