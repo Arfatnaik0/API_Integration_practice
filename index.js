@@ -13,7 +13,7 @@ const weatherAirElement=document.querySelector(".air-value-txt");
 const weatherHumElement=document.querySelector(".humidity-value-txt");
 const weatherSummaryImg=document.querySelector(".weather-icon-img");
 
-const API_KEY="74dcc4c2667120c8e4f27d2b7482d232";
+
 
 // Weather icon mapping
 const weatherIcons = {
